@@ -1,4 +1,4 @@
-import Home from '../views/Home.js'
+import Home from './views/Home.js'
 
 const navigateTo = (url) => {
     history.pushState(null, null, url)
