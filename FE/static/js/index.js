@@ -39,6 +39,10 @@ const router = async () => {
 window.addEventListener('popstate', router)
 
 document.addEventListener('DOMContentLoaded', () => {
+    const path = location.pathname
+    if (path) {
+        navigateTo(path)
+    }
     document.body.addEventListener('click', (e) => {
         if (e.target.matches('[data-link]')) {
             e.preventDefault()
